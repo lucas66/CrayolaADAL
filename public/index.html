@@ -1,0 +1,332 @@
+﻿
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>O365 Connect sample</title>
+    <base href="/">
+    <script src="scripts/angular.js"></script>
+    <script src="scripts/angular-route.js"></script>
+    <script src="scripts/loading-bar.js"></script>
+    <link rel="stylesheet" href="scripts/loading-bar.css">
+
+    <!-- App code. -->
+    <script src="scripts/config.js"></script>
+    <script src="scripts/app.js"></script>
+    <script src="controllers/mainController.js"></script>
+
+    <!-- ADAL JS files. -->
+    <script src="scripts/adal.js"></script>
+    <script src="scripts/adal-angular.min.js"></script>
+    <style>
+        body {
+            font-family: omnes-pro,omnes, Helvetica, Arial, sans-serif;
+        }
+
+        button img {
+            position: relative;
+            top: 3px;
+        }
+
+        button .ms-Button-label {
+            position: relative;
+            top: -7px;
+        }
+
+        .box-supplies + .aside-box {
+            margin-bottom: 0;
+        }
+    </style>
+</head>
+
+<body class="ms-Grid">
+
+    <div id="content" style="width:1200px; margin:auto;">
+        <div class="col-main col-xs-12 col-md-8" style="float:left; width:66.66666667%;">
+            <div class="page-header-lp">
+                <h1>Americana Coasters</h1>
+            </div>
+            <div class="intro">
+                <p>This is a fun, easy, and meaningful way to display your patriotism all year ‘round. Create eye-catching patriotic coasters with Color Switchers Markers.</p>
+            </div>
+            <div class="visual-panel" style="width:645px;">
+                <div class="social-bar">
+                    <ul>
+                        <li><a href="#" class="link-print">Print</a></li>
+                        <!--<li><a href="#" class="link-favorite">Favorite</a></li>-->
+                        <li><a href="#new_popup_holder" class="link-share">Share</a></li>
+                    </ul>
+                </div>
+                <div class="img-box">
+                    <a href="#">
+                        <img id="hero-img" src="/~/media/Crayola/Lesson%20Plans/lesson_plans/1299.jpg?h=620&mh=762&mw=645&w=645" alt="Americana Coasters lesson plan" style="width:645px; height:628px;" width="645" height="620">
+                        <!-- <span class="zoom">Zoom</span> -->
+                    </a>
+                </div>
+                <ul class="infobar">
+                    <li>
+                        <strong>
+                            <span class="icon icon-book"></span>
+                            Grade 3<br>
+
+                            Grade 4<br>
+
+                            Grade 5<br>
+
+                            Grade 6<br>
+
+                            Grades 7 and 8<br>
+
+                        </strong>
+                    </li>
+                    <li>
+                        <strong>
+                            <span class="icon icon-clock"></span>
+                            60 to 90 Minutes<br>
+
+                        </strong>
+                    </li>
+                    <!--<li>
+                        <strong><span class="icon ico-print"></span>153,136</strong>
+                    </li>
+                    <li>
+                        <strong><span class="icon icon-heart2"></span>158</strong>
+                    </li>-->
+                </ul>
+            </div>
+            <ul class="items">
+                <li class="active">
+                    <h2><a href="#" class="opener" title="Directions">Directions</a></h2>
+                    <div class="slide">
+
+                        <ol>
+
+                            <li>
+                                Students use a recycled CD as a template to draw circles on white construction paper, cork, and clear plastic adhesive. Cut out the circles with Crayola Scissors.
+                            </li>
+
+                            <li>
+                                Using Crayola Washable Markers, create patriotic sayings on each circle of construction paper.
+                            </li>
+
+                            <li>
+                                Use a Crayola Glue Stick to adhere the patriotic design to a recycled CD. Then glue the recycled CD to a cork circle.
+                            </li>
+
+                            <li>
+                                Peel away the paper backing on the clear plastic adhesive circle. Apply the clear plastic adhesive circle on top of the patriotic design.
+                            </li>
+
+                        </ol>
+
+                    </div>
+                </li>
+
+                <li class="active">
+
+                    <h2><a href="#" class="opener" title="Standards">Standards</a></h2>
+                    <div class="slide">
+
+                        <p>
+                            LA: Read and comprehend complex literary and informational texts independently and proficiently.
+
+                        </p>
+
+                        <p>
+                            LA: Gather relevant information from multiple print and digital sources, assess the credibility and accuracy of each source, and integrate the information while avoiding plagiarism.
+
+                        </p>
+
+                        <p>
+                            LA: Draw evidence from literary or informational texts to support analysis, reflection, and research.
+
+                        </p>
+
+                        <p>
+                            LA: Prepare for and participate effectively in a range of conversations and collaborations with diverse partners, building on others' ideas and expressing their own clearly and persuasively.
+
+                        </p>
+
+                        <p>
+                            LA: Write informative/explanatory texts to examine a topic and convey ideas and information clearly.
+
+                        </p>
+
+                        <p>
+                            LA: Make strategic use of digital media and visual displays of data to express information and enhance understanding of presentations.
+
+                        </p>
+
+                        <p>
+                            MATH: Recognize and draw shapes having specified attributes, such as a given number of angles or a given number of equal faces.
+
+                        </p>
+
+                        <p>
+                            SS: Identify and use various sources for reconstructing the past, such as documents, letters, diaries, maps, textbooks, photos, and others.
+
+                        </p>
+
+                        <p>
+                            SS: Demonstrate an understanding that people in different times and places view the world differently.
+
+                        </p>
+
+                        <p>
+                            VA: Know that the visual arts have both a history and specific relationships to various cultures.
+
+                        </p>
+
+                        <p>
+                            VA: Understand there are various purposes for creating works of visual art.
+
+                        </p>
+
+                        <p>
+                            VA: Identify connections between the visual arts and other disciplines in the curriculum.
+
+                        </p>
+
+                    </div>
+
+                </li>
+                <li class="active">
+
+                    <h2><a href="#" class="opener" title="Adaptations">Adaptations</a></h2>
+                    <div class="slide">
+
+                        <p>
+                            In lieu of using recycled CDs for a circular figure, challenge upper elementary students (grades 5+) to create a circular template with an assigned radius.
+
+                        </p>
+
+                        <p>
+                            Students research past political campaigns, candidates, issues of the time period, and slogans that were used during the campaigns. Students analyze and discuss how the slogans represented the issues facing the candidates. Students then generate a list of issues facing their community, state, and/or country. Challenge students to write a creative political slogan that could be used to address an issue of the period. Students write a descriptive paragraph, illustrating how their slogan represents the issue. Students take digital photographs of their (CD) slogans and upload them to a classroom computer for viewing. and further discussion.
+
+                        </p>
+
+                        <p>
+                            In small groups, students research patriotism and political issues in other countries. Are there political slogans used in the researched country? If so, how do they compare to slogans from their home country? Student groups compare and contrast researched information. A visual display can also be made for enhanced effect.
+
+                        </p>
+
+                        <p>
+                            The CD slogan activity can also be used for student elections. Student-made slogan CDs can be displayed in a public area of their schools or in an assembly in preparation for candidate speeches.
+
+                        </p>
+
+                    </div>
+
+                </li>
+            </ul>
+            <div class="paging">
+                <p><a href="http://www.crayola.com/support/craft-safety.aspx" id="safetyGuidelines" title="View our Safety Guidelines" class="more">View our Safety Guidelines</a></p>
+            </div>
+        </div>
+        <aside class="aside col-xs-12 col-md-4" style="float:left; width:20.33333333%;">
+            <section class="aside-box box-supplies">
+                <h3><strong>SUPPLIES NEEDED</strong></h3>
+                <div class="frame">
+                    <ul class="list">
+
+                        <li id="listItem"><span id="uxSingleText">Clear Plastic Adhesive</span></li>
+
+                        <li id="listItem"><a href="http://shop.crayola.com/search?q=construction%20paper" title="Construction Paper">Construction Paper</a></li>
+
+                        <li id="listItem"><span id="uxSingleText">Cork</span></li>
+
+                        <li id="listItem"><a href="http://shop.crayola.com/art-and-craft-supplies/glue-and-scissors/pointed-tip-scissors-6930103007.html" title="Pointed Tip Scissors">Pointed Tip Scissors</a></li>
+
+                        <li id="listItem"><span id="uxSingleText">Recycled CD</span></li>
+
+                        <li id="listItem"><a href="http://shop.crayola.com/art-and-craft-supplies/markers#cgid=washable-markers" title="Washable Markers">Washable Markers</a></li>
+
+                    </ul>
+                </div>
+                <!--<p class="more-holder"><a href="#" class="more-alt">See more supplies</a></p>-->
+            </section>
+            <section class="aside-box box-links">
+                <a href="#" class="lp-btn lp-btn-primary lp-btn-print" onclick="javascript:(print());" role="button" title="Add to favorites"><span><span>Print</span></span></a>
+                <div ng-app="app">
+                    <div ng-view></div>
+                </div>
+                <!--<a href="#" class="link-add" role="button" title="Add to favorites">Add to favorites</a>-->
+            </section>
+            <section class="aside-box box-tags">
+                <h3>Tags</h3>
+                <h4>
+                    Categories
+                </h4>
+                <ul>
+
+                    <li>Language Arts</li>
+
+                    <li>Mathematics</li>
+
+                    <li>Social Studies</li>
+
+                    <li>Visual Arts</li>
+
+                </ul>
+                <h4>
+                    Subcategories
+                </h4>
+                <ul>
+
+                    <li>Citizenship and Civics</li>
+
+                    <li>Colors, Lines, Shapes, Forms and Textures</li>
+
+                    <li>Interpreting, Expressing and Conveying Ideas</li>
+
+                    <li>Power, Authority and Governance</li>
+
+                    <li>Reading and Informational Text</li>
+
+                    <li>Shapes and Geometry</li>
+
+                    <li>Speaking and Listening</li>
+
+                    <li>Time, Continuity and Change</li>
+
+                    <li>Word Recognition</li>
+
+                    <li>Writing</li>
+
+                </ul>
+            </section>
+        </aside>
+    </div>
+</body>
+
+</html>
+
+<!--
+O365-Angular-Microsoft-Graph-Connect, https://github.com/OfficeDev/O365-Angular-Microsoft-Graph-Connect
+
+Copyright (c) Microsoft Corporation
+All rights reserved.
+
+MIT License:
+Permission is hereby granted, free of charge, to any person obtaining
+a copy of this software and associated documentation files (the
+"Software"), to deal in the Software without restriction, including
+without limitation the rights to use, copy, modify, merge, publish,
+distribute, sublicense, and/or sell copies of the Software, and to
+permit persons to whom the Software is furnished to do so, subject to
+the following conditions:
+
+The above copyright notice and this permission notice shall be
+included in all copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND,
+EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF
+MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND
+NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE
+LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION
+OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION
+WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
+
+-->
